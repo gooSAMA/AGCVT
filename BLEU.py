@@ -16,7 +16,7 @@ reference = []  # 给定标准译文
 candidate = []  # 神经网络生成的句子
 # 计算BLEU
 reference.append(target_fenci.split())
-candidate = (inference_fenci.split())
+candidate =(inference_fenci.split())
 score1 = sentence_bleu(reference, candidate, weights=(1, 0, 0, 0))
 score2 = sentence_bleu(reference, candidate, weights=(0, 1, 0, 0))
 score3 = sentence_bleu(reference, candidate, weights=(0, 0, 1, 0))
